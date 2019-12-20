@@ -1,0 +1,32 @@
+<section>
+    <button
+      [disabled]="isEmpty() === 0"
+      class="btn btn-highLight"
+      (click)="playGame()">
+      Start new Game
+    </button>
+  <div class="grid-of-squares">
+    <app-square
+      *ngFor="let sqr of squares; let i = index"
+      [value]="sqr"
+      [winningSquares]="winningSquares"
+      [index]="i"
+      (click)="play(i)">
+    </app-square>
+  </div>
+  <div class="info">
+    <h1
+      *ngIf="!winner && isEmpty() !== squares.length"
+    >
+      Current Player:
+      <span [ngClass]="xPlayer ? 'text-x' : 'text-o'">{{ currentPlayer() }}</span>
+    </h1>
+    <h2 *ngIf="winner">
+      Player <span class="text-highLight">{{ winner }}</span> won!
+    </h2>
+    <h2 *ngIf="!winner && isEmpty() === squares.length">
+      Tie!
+    </h2>
+  </div>
+</section>
+

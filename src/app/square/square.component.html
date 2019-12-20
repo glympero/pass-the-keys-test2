@@ -1,0 +1,9 @@
+<button
+  [ngClass]="{
+    'btn btn-x' : value == 'X' && winningSquares.indexOf(index) === -1,
+    'btn btn-o' : value == 'O' && winningSquares.indexOf(index) === -1,
+    'btn btn-highLight' : winningSquares.indexOf(index) !== -1
+    }"
+  >
+  {{ value }}
+</button>

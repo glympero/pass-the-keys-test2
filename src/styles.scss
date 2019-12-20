@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+app-square {
+  border: 1px gray solid;
+  height: 120px;
+}
+
+.btn-x {
+  background-color: $blueColor;
+  color: $offWhite;
+}
+
+.btn-o {
+  background-color: $yellowColor;
+}
+
+.btn-highLight {
+  background-color: $highLightColor;
+  color: $offWhite;
+}
+
+.text-x {
+  color: $blueColor;
+}
+
+.text-o {
+  color: $yellowColor;
+}
+
+.text-highLight {
+  color: $highLightColor;
+}
+
+button {
+  border-radius: 0;
+}
+
