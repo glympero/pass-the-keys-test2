@@ -6,12 +6,12 @@ app-square {
 }
 
 .btn-x {
-  background-color: $blueColor;
+  background-color: var(--blue-color);
   color: $offWhite;
 }
 
 .btn-o {
-  background-color: $yellowColor;
+  background-color: var(--yellow-color);
 }
 
 .btn-highLight {
@@ -20,11 +20,11 @@ app-square {
 }
 
 .text-x {
-  color: $blueColor;
+  color: var(--blue-color);
 }
 
 .text-o {
-  color: $yellowColor;
+  color: var(--yellow-color);
 }
 
 .text-highLight {

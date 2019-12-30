@@ -8,6 +8,7 @@ import { BoardComponent } from './board/board.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import './utils/array-prototypes';
+import { SquareColorDirective } from './directives/square-color.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import './utils/array-prototypes';
     SquareComponent,
     BoardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SquareColorDirective
   ],
   imports: [
     BrowserModule,

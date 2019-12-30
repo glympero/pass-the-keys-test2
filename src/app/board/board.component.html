@@ -19,7 +19,8 @@
       *ngIf="!winner && isEmpty() !== squares.length"
     >
       Current Player:
-      <span [ngClass]="xPlayer ? 'text-x' : 'text-o'">{{ currentPlayer() }}</span>
+<!--      <span [ngClass]="xPlayer ? 'text-x' : 'text-o'">{{ currentPlayer() }}</span>-->
+      <span [appSquareColor]="currentPlayer()">{{ currentPlayer() }}</span>
     </h1>
     <h2 *ngIf="winner">
       Player <span class="text-highLight">{{ winner }}</span> won!
